@@ -9,7 +9,7 @@ selenium-debug.log
 /tests_output
 nightwatchProps.js
 nightwatch.conf.js
-/nightwatch
+# /nightwatch
 
 # production
 /build
