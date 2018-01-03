@@ -24,7 +24,10 @@ module.exports = {
         lpExpiration: 'input[name="lidInput"]',
         submit: 'button[id="saveBtn"]',
         clear: 'button[id="clearBtn"]',
-        query: 'span[name="queryBody"]'
+        query: 'span[name="queryBody"]',
+        valid: 'h4[id="validHeader"]',
+        errors: 'li[class="errorMessage"]',
+        errorList: 'ul[id="errorList"]'
     },
     modifyFields: {
         warrantID: 'input[name="widInput"]',

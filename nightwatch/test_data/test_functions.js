@@ -16,7 +16,11 @@ function enterFormData(dataSet, browser) {
 }
 
 /**
+ * enterValue to enter a  values into a designated slector.
  * 
+ * @selector the field to have data entered
+ * @value the data to be entered into the field
+ * @browser The browser object that represents the test environment
  */
 function enterValue(selector, value, browser) {
     browser
