@@ -18,7 +18,7 @@ class EnterWanted extends Component {
         {required: true, name: 'Race', code: 'rac', set: [], alpha: true, numeric: false, special: false, custom: null, min: 1, max: 1, input: ''},
         {required: true, name: 'Height', code: 'hgt', set: [], alpha: false, numeric: true, special: false, custom: null, min: 3, max: 3, input: ''},
         {required: true, name: 'Weight', code: 'wgt', set: [], alpha: false, numeric: true, special: false, custom: null, min: 1, max: 3, input: ''},
-        {required: true, name: 'Hair', code: 'hai', set: [], alpha: true, numeric: false, special: true, custom: null, min: 3, max: 10, input: ''}, 
+        {required: true, name: 'Hair', code: 'hai', set: [], alpha: true, numeric: false, special: false, custom: null, min: 3, max: 10, input: ''}, 
         {required: true, name: 'Offense', code: 'off', set: [], alpha: true, numeric: true, special: true, custom: null, min: 5, max: 15, input: ''},
         {required: true, name: 'Date of Warrant/Violation', code: 'dow', set: [], alpha: false, numeric: true, special: false, custom: 'date', min: 8, max: 8, input: ''},
         {required: false, name: 'Drivers License', code: 'oln', set: ['oln', 'ols', 'old'], alpha: true, numeric: true, special: true, custom: null, min: 1, max: 20, input: ''},
