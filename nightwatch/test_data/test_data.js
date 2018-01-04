@@ -116,6 +116,79 @@ module.exports = {
         }
 
     },
+    validCancel: {
+        minChar: {
+            warrantID: '9876543210',
+            reason: 'Apathy inc',
+            cancelDate: '01042018'
+        },
+        maxChar: {
+            warrantID: '9876543210',
+            reason: 'A culture of institutionalized bureaucracy led to attitudes procedure over evaluation of the situation and application of the original meaning of regs',
+            cancelDate: '01042018'
+        }
+    },
+    invalidCancel: {
+        lowChar: {
+            warrantID: '9876543210',
+            reason: 'ApathyInc',
+            cancelDate: '01042018'
+        },
+        highChar: {
+            warrantID: '9876543210',
+            reason: 'An culture of institutionalized bureaucracy led to attitudes procedure over evaluation of the situation and application of the original meaning of regs',
+            cancelDate: '01042018'
+        }
+    },
+    cancelQueries: {
+        minChar: '9876543210.Apathy inc.01042018',
+        maxChar: '9876543210.A culture of institutionalized bureaucracy led to attitudes procedure over evaluation of the situation and application of the original meaning of regs.01042018'
+    },
+    cancelErrors: {
+        reason: 'The "Reason for Cancellation" field should be between 10 and 150 characters long.',
+        date: `The "Date of Cancellation" field must be entered as a date, MMDDYYYY, no earlier than 01011900 and no later than today's date.`
+    },
+    modifyData: {
+        warrantID: {
+            id: '0123456789'
+        },
+        allTest: {
+            header: '132456789',
+            mke: 'A@',
+            ori: '123456789',
+            name: 'Thor',
+            sex: 'U',
+            race: 'A',
+            height: '604',
+            weight: '280',
+            hair: 'Blonde',
+            offense: 'Immigration',
+            date: '05062011',
+        },
+        dlTest: {
+            dl: 'AZ45873158',
+            dlState: 'AZ',
+            dlExpiration: '01012017',
+            lp: '4Z64RD',
+            lpState: 'AZ',
+            lpExpiration: '02292017'
+        },
+        queryStrings: {
+            header: '0123456789.132456789.......000.........',
+            mke: '0123456789..A@......000.........',
+            ori: '0123456789...123456789.....000.........',
+            name: '0123456789....Thor....000.........',
+            sex: '0123456789.....U...000.........',
+            race: '0123456789......A..000.........',
+            height: '0123456789.......604.000.........',
+            weight: '0123456789........280.........',
+            hair: '0123456789........000.Blonde........',
+            offense: '0123456789........000..Immigration.......',
+            date: '0123456789........000...05062011......',
+            dl: '0123456789........000....AZ45873158.AZ.01012017...',
+            lp: '0123456789........000.......4Z64RD.AZ.02292017'
+        }
+    },
     expectedString: {
         basicTest: '132456789.A@.123456789.Steve Rodgers.M.W.600.205.Brown.Treason.05062016......',
         dlTest: '132456789.A@.LATV65789.Wanda Marya Maximoff.F.S.506.130.Red.WitchCraft.05062017.RO987654321.MD.11192017..',
@@ -234,7 +307,6 @@ module.exports = {
                 dlState: '45',
                 lpState: '32'
             }
-
         },
 
     }

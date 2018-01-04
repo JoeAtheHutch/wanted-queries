@@ -31,9 +31,9 @@ module.exports = {
     },
     modifyFields: {
         warrantID: 'input[name="widInput"]',
-        header: 'input[name="hdrINput"]',
+        header: 'input[name="hdrInput"]',
         mke: 'input[name="mkeInput"]',
-        ori: 'input[name="oriInput]',
+        ori: 'input[name="oriInput"]',
         name: 'input[name="namInput"]',
         sex: 'input[name="sexInput"]',
         race: 'input[name="racInput"]',
@@ -49,14 +49,17 @@ module.exports = {
         lpState: 'input[name="lisInput"]',
         lpExpiration: 'input[name="lidInput"]',
         submit: 'button[id="saveBtn"]',
-        clear: 'button[id="clearBtn"]'
+        clear: 'button[id="clearBtn"]',
+        query: 'span[name="queryBody"]'
 
     },
     cancelFields: {
-        warantID: 'input[name="widInput"]',
+        warrantID: 'input[name="widInput"]',
         reason: 'input[name="resInput"]',
         cancelDate: 'input[name="datInput"]',
         submit: 'button[id="saveBtn"]',
-        clear: 'button[id="clearBtn"]'
+        clear: 'button[id="clearBtn"]',
+        query: 'span[name="queryBody"]',
+        errorText: 'ul[id="errorList"]'
     }
 }

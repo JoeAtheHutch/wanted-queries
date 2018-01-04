@@ -23,12 +23,13 @@ module.exports = {
     },
     'Testing for data with too few characters': browser => {
         browser.click(selectors.topNav.enterPage)
+        functions.fillForm(data.goodData.allTest, browser)
         for (var key in data.badData.shortVal) {
             if (data.badData.shortVal.hasOwnProperty(key)) {
-                functions.fillForm(data.goodData.allTest, browser)
                 functions.enterValue(selectors.entryFields[key], data.badData.shortVal[key], browser)
                 browser.click(selectors.entryFields.submit)
                 browser.expect.element(selectors.entryFields.errors).text.to.contain(data.expectedError.length[key])
+                functions.enterValue(selectors.entryFields[key], data.goodData.allTest[key], browser)
             }
         }
     },
